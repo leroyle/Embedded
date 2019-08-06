@@ -1,5 +1,5 @@
 
 
 <a href="docs/resources.html">
-# Embedded Resources
+# Embedded Resources Master
 </a>
