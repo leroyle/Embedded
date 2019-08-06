@@ -1,3 +1,3 @@
-# List of Useful Embedded Related Resource
+# List of Useful Embedded Related Resources
 
-<a href="docs/resources.html">LINKS</a>
+<a href="docs/resources.html">See The Links Here</a>
