@@ -1,3 +1,5 @@
-# Embedded - List of Useful Resource
 
-<a href="docs/resources.html">LINKS</a>
+
+<a href="docs/resources.html">
+# List of Useful Embedded Related Resource
+</a>
