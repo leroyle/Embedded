@@ -74,7 +74,9 @@ function submitUserForm() {
   if(response.length == 0) {
      document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Please check above box if not a robot.</span>';
      formValidation=false;
-  }
+  } else{
+     document.getElementById('g-recaptcha-error').innerHTML = '';
+  } 
 
    
   return formValidation;
