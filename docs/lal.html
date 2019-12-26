@@ -8,7 +8,7 @@
 function submitUserForm() {
     var response = grecaptcha.getResponse();
     if(response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Please check above box if not a robot.</span>';
         return false;
     }
     return true;
