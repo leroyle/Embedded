@@ -1,35 +1,20 @@
-<html>
-  <head>
-    <title>reCaptcha validation demo</title>
-     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
-<!-- document.getElementById("my_captcha_form").addEventListener("submit",function(evt) -->
-  {
-  
-  var response = grecaptcha.getResponse();
-  if(response.length == 0) 
-  { 
-    //reCaptcha not verified
-    alert("please verify you are humann!"); 
-    evt.preventDefault();
-    return false;
-  }
-  //captcha verified
-  //do the rest of your validations here
-  
-});
-     </script>
-  </head>
-  <body>
-<div class="form_container">
-  <form action="#" id="my_captcha_form">
-    <div class="g-recaptcha" 
-data-sitekey="6LfrFKQUAAAAAMzFobDZ7ZWy982lDxeps8cd1I2i" 
-></div>
-    <p>
-    <button type="submit" >Submit</button>
-    </p>
-  </form>
-</div>
-</body>
-</html>
+<form method="post" onsubmit="return submitUserForm();">
+    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="verifyCaptcha"></div>
+    <div id="g-recaptcha-error"></div>
+    <input type="submit" name="submit" value="Submit" />
+</form>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
+    }
+    return true;
+}
+ 
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
