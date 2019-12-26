@@ -1,0 +1,27 @@
+
+<html>
+
+
+<!-- BEGIN DJEVENTPLANNER CODE -->
+<form method="post" action="https://djfinder.com/contactus.asp" onSubmit=" if (!(this.full_name.value.length > 0)) {alert('Please enter your names');this.full_name.focus();return false;} if (!(this.email.value.length > 0)) {alert('Please enter your email address');this.email.focus();return false;}  if (!(this.message.value.length > 0)) {alert('Please enter your message');this.message.focus();return false;} var googleCaptchaElement = document.getElementById('gcaptchadiv'); if (googleCaptchaElement === null) { } else { if (grecaptcha.getResponse() == "){alert('You must check the "I\'m not a robot" checkbox to continue');return false;}} return true;"  style="margin:10px 20px;" >
+<script src="https://www.google.com/recaptcha/api.js" async defer></script><div>
+<div>
+<p><label>Name</label></p>
+<input type="text" id="full_name" name="full_name" placeholder="Your Full Names">
+</div>
+<div>
+<p><label>Email</label></p>
+<input type="email" id="email" name="email" placeholder="Email Address">
+</div>
+<div>
+<p><label>Message</label></p>
+<textarea name=message rows="4" cols="35"> </textarea>
+</div>
+<div><div style="margin: 20px auto;" id="gcaptchadiv"><div class="g-recaptcha" data-sitekey="6LdqEMkUAAAAAB8-wssreaYN8QHmyJQih4J62esv"></div></div></div><button type="submit">Submit</button>
+</div>
+<input type=hidden name=showlogo value=false><input type=hidden name=action value=process><input type=hidden name=djidnumber value=22668><input type=hidden name=source value=''>
+</form>
+<!-- END DJEVENTPLANNER CODE -->
+
+
+</html>
