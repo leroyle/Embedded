@@ -4,5 +4,4 @@
 # Embedded Resources Master
 </a>
 
-Use this link <a href="https://github.com/leroyle/Embedded">link to page</a>
-or  https://leroyle.github.io/Embedded/
+Use this link via browser to get to site:  https://leroyle.github.io/Embedded/
